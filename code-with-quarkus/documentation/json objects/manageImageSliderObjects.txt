@@ -1,0 +1,20 @@
+ADD IMAGE TO SLIDER JSON
+
+  {
+    "id" : "3",
+    "name" : "sports",
+    "url" : "imageURL"
+}
+
+
+
+DELETE IMAGE FROM SLIDER JSON
+
+  {
+    "id" : "2",
+    
+}
+
+
+
+http://localhost:8080/manageSliderImage/viewSliderImagewtihid?param1=3

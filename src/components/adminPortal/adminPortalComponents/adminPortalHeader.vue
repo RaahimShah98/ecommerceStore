@@ -1,16 +1,18 @@
 <template>
     <div id="header">
 
-        <div id="adminPortalLogo">Admin Portal</div>
+        <logo></logo>
         <button id="adminPortalLogOutButton">LogOut</button>
 
     </div>
 </template>
 
 <script>
-
+import logo from '../../generalComponents/storeLogo.vue'
 export default {
-
+  components:{
+    logo
+  }
 }
 
 </script>
@@ -23,11 +25,25 @@ export default {
     padding: 10px 20px;
 }
 
+
+
 #adminPortalLogOutButton {
-    padding: 10px 15px;
-    border-radius: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #f44336; /* Red color, you can change it to any other color you prefer */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
 
+#adminPortalLogOutButton:hover {
+  background-color: #d32f2f; /* Darker shade of red on hover */
+}
 
-
+#adminPortalLogOutButton:active {
+  background-color: #b71c1c; /* Even darker shade of red on active/clicked */
 }
 </style>

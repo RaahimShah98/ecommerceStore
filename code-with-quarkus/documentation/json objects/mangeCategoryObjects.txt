@@ -1,0 +1,12 @@
+ADDCATEGORY JSON
+ {
+    "id" : "1",
+    "name" : "makeup" 
+}
+
+DELETE CATEGORY JSON
+  {
+    "id" : "1",
+}
+ 
+

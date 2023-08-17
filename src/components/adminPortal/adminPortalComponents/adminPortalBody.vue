@@ -1,23 +1,10 @@
 <template>
     <div id="adminPortalBody">
-        <div id="adminPortalBodyLeft">
-
-            <button class="adminNavButton" id="addItemBtn" >Add Items</button>
-            <button class="adminNavButton" id="addItemBtn" >Check Inventory</button>
-            <button class="adminNavButton" id="addItemBtn" >Add Category</button>
-            <button class="adminNavButton" id="addItemBtn" >View Categories</button>
-            <button class="adminNavButton" id="addItemBtn" >Check User</button>
-
-
-        </div>
+            
+        <adminNavBar></adminNavBar>
 
         <div id="adminPortalBodyRight">
-            <adminAddItemComponent v-show=false></adminAddItemComponent>
-            <viewItemComponent v-show=false></viewItemComponent>
-            <adminAddCategoryComponent v-show=false></adminAddCategoryComponent>
-            <viewCategoryComponent v-show=false></viewCategoryComponent>
-            <viewCustomer v-show=true></viewCustomer>
-
+         
 
         </div>
 
@@ -26,68 +13,44 @@
 
 
 <script>
-import adminAddItemComponent from './adminAddItemComponent.vue';
-import viewItemComponent from './viewItems.vue';
-import adminAddCategoryComponent from './adminAddCategory.vue'; 
-import viewCategoryComponent from './viewCategories.vue';
-import viewCustomer from './viewCustomers.vue';
-
-
+import adminNavBar from './adminNavBar.vue';
+// import axios from 'axios';
 
 export default {
-    data() {
-        return {
-
-        }
-    },
-    components: {
-        adminAddItemComponent,
-        viewItemComponent,
-        adminAddCategoryComponent,
-        viewCategoryComponent,
-        viewCustomer
-
-
-
+    components:{
+        adminNavBar,
     }
 }
 
 </script>
 
-<style scoped>
+<style>
+
 #adminPortalBody {
 
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     display: flex;
-    width: 97%;
+    justify-content: space-between;
+  
 
 }
 
-#adminPortalBodyLeft {
 
-    display: block;
-    background-color: white;
-    border-radius: 10px;
-    width: 45%;
-    margin-right: 10px;
-    padding: 10px;
-}
 
 #adminPortalBodyRight {
     display: block;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
-    border-radius: 10px;
-    width: 45%;
+    border-radius: 3px;
+    width:75%;
+    height: 800px;
+    overflow-y: scroll;
+    margin-left: 2px;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
-.adminNavButton {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
 
 #adminPortalDetailHeader {
     font-size: 20px;

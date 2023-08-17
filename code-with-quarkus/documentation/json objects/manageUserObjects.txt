@@ -1,0 +1,25 @@
+ADDUSER JSON
+ 
+   {
+    "id" : "10",
+    "name" : "tempName",
+    "email" : "tempEmail",
+    "password" : "tempPass",
+    "address" : "tempAddress",
+    "status" : "active",
+
+}   
+
+
+
+DELETE USER JSON 
+
+
+    {
+    "id" : "5",
+}
+
+
+
+
+

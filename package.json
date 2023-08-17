@@ -5,16 +5,26 @@
   "description": "",
   "author": "",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "start": "node server/index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "previvew": "vite preview",
+    "lint": "eslint . --ext .vue, .js, .jsx, .cjs, .mjs --fix --igonre-path .gitignore",
+    "format": "prettier --write src/"
   },
   "main": "index.js",
   "dependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.2",
     "core-js": "^3.8.3",
     "express": "^4.18.2",
-    "vue": "^3.2.13"
+    "md5": "^2.3.0",
+    "mssql": "^9.1.1",
+    "mysql": "^2.18.1",
+    "uuid": "^9.0.0",
+    "vite": "^4.3.9",
+    "vue": "^3.2.13",
+    "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
